@@ -13,3 +13,8 @@
     In the year of 2002, the spanish currency Peseta converted to Euro. So, then after all the investments are converted to Euroes and the system will count the amount/value in the Euroes.
 
     The system will also check whether the Value of Money grew faster in Dectatoral Era than Republican Era or not.
+
+## Inputs
+
+    The user input - Year of Investment - is integer typed. (should be >= 1960 till current year)
+    The input - Amount of Investment - is double typed. (should be in Peseta till 2002 and then in Euroes)
