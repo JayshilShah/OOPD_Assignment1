@@ -82,12 +82,13 @@ void calculateValueOfAmount(double investedAmount, int investedYear){
         if (dataOfInvestment[i].yearOfInvestment == investedYear)
         {
             amomuntWithInterest = amountInvested + (amountInvested * ((dataOfInvestment[i].rateOfInterest - dataOfInvestment[i].rateOfInflation) / 100));
+            valueGained  = result - amomuntWithInterest;
             break;
         }
     }
-    double decimalPart1 = amomuntWithInterest - int(amomuntWithInterest);
+    double decimalPart1 = valueGained - int(valueGained);
     int paisa1 = int(decimalPart1*100);
-    cout << "Value gained after the year of invesment: " << int(amomuntWithInterest) << " Rupees and " << paisa1 << " paisa" << endl;
+    cout << "Value gained after the year of invesment till now: " << int(valueGained) << " Rupees and " << abs(paisa1) << " paisa" << endl;
 }
 
 int main()
